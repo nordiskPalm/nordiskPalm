@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <link rel="stylesheet" href="order.css">
+    <script src="order.js"></script>
+</head> 
+<body>  
+    <div class="body">       
+        <div class="logo">
+            <img src="LofiGuyTofs.png" class="LofiPic">
+            <p id="topText">LocalLofiMusic inc.</p>
+        </div>           
+        <div class="info">
+            <h1>LocalLofi</h1>
+            <p>Vi här på LocalLofi ser till att leverera musik av bästa kvalitet til rimliga priser. Oavsett om du spelar CD i bilen, vinyl i vardagsrummet eller mp3 på bussen har vi musiken för dig.
+            </p>
+            <h2>LocalLofi</h2>
+            <p>Albumen i vårat utbud kommer och går med tiden, det som finns idag är inte garanterat att finnas imorgon. Passa på att unna dig eller någon du tycker om lite ny musik innan chansen är borta.</p>
+            <h5>Välj album och mediatyp:</h5>
+        </div>     
+         <form name="frm" action="server.html" onsubmit="return test_sub();">
+            <div class="rightcolumn">
+                <div class="links">
+                    <p class="para"><a href="order.html">Home</a></p>
+                    <p class="para"><a href="order.html">Start</a></p>
+                    <p class="para"><a href="order.html">Catalogue</a></p>
+                </div>              
+                <div class="one">
+                    <div id="valdaSkivor">
+                        <p>Du har valt följande album:</p>              
+                    </div>          
+                </div>
+                <div class="pris">
+                    <p id="demo">Pris: 0 SEK</p>                
+                </div>
+            </div>
+            <div class="leftcolumn">
+                 <div class="table">
+                     <table border=0  width="100%">    
+                         <tr>
+                              <td colspan="3">*Namn:</td> 
+                              <td colspan="3"><input type="text" name="namn" class="textBox"></td> 
+                        </tr>      
+                         <tr> 
+                            <td colspan="3">*Efternamn:</td> 
+                            <td colspan="3"><input type="text" name="lastname" class="textBox"></td>
+                        </tr>
+                         <tr> 
+                             <td colspan="3">*Adress:</td>
+                             <td colspan="3"><input type=text name="adress" class="textBox"></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3">*E-post:</td>
+                            <td colspan="3"><input type=text name="mail" class="textBox"></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="3">Ålder:</td>
+                            <td colspan="3">
+                                <select>
+                                    <option>-</option>
+                                    <option>Ung</option>
+                                    <option>Gammal</option>
+                                </select>
+                            </td>
+                        </tr>       
+                        <tr> 
+                            <td colspan="3">Övrigt:</td>
+                            <td colspan="3">
+                                <textarea class="textBox"></textarea></td>
+                        </tr>       
+                        <tr> 
+                            <td colspan="6" style="padding: 10px;"></td>
+                        </tr>
+                        <tr> 
+                            <td colspan="6">Välj album:</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="padding: 10px;"></td>
+                        </tr>                       
+                        <tr>
+                            <td rowspan="3" colspan="3" width="50%" class="album">Sonic Youth</td>
+                            <td colspan="2">
+                                <input type="checkbox" value="Sonic Youth: Goo |149" onclick="changeContent(this,'valdaSkivor','oneRecord')" >Goo</td>
+                            <td colspan="1" class="kostnad">149 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="Sonic Youth: Sisters |99" onclick="changeContent(this,'valdaSkivor','oneRecord')">Sister</td>
+                            <td colspan="1" class="kostnad">99 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="Sonic Youth: Daydream Nation |179" onclick="changeContent(this,'valdaSkivor','oneRecord')">Daydream Nation</td>
+                            <td colspan="1" class="kostnad">179 SEK</td>
+                        </tr>                    
+                        <tr>
+                            <td colspan="6" style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" colspan="3" width="50%" class="album">Pixels</td>
+                            <td colspan="2">
+                                <input type="checkbox" value="Pixels: Bussanova |99" onclick="changeContent(this,'valdaSkivor','oneRecord')">Bussanova</td>
+                            <td colspan="1" class="kostnad">99 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="Pixels: Trompe le Monde |119" onclick="changeContent(this,'valdaSkivor','oneRecord')">Trompe le Monde</td>
+                            <td colspan="1" class="kostnad">119 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="checkbox" onclick="showAlert(this)">Surfer Rosa [kan ej beställas]</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="Pixels: Doolittle |99" onclick="changeContent(this,'valdaSkivor','oneRecord')">Doolittle</td>
+                            <td colspan="1" class="kostnad">99 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td rowspan="5" colspan="3" class="album">Nick Cave and the Bad Seeds</td>
+                            <td colspan="2">
+                                <input type="checkbox" value="Nick Cave and the Bad Seeds: Tender Pray |119" onclick="changeContent(this,'valdaSkivor','oneRecord')">Tender Pray</td>
+                            <td colspan="1" class="kostnad">119 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><input type="checkbox" value="Nick Cave and the Bad Seeds: Good Son |119" onclick="changeContent(this,'valdaSkivor','oneRecord')">Good Son</td>
+                            <td colspan="1" class="kostnad">119 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                <input type="checkbox" id="9" name="Let Love In" onclick="showAlert(this)">Let Love In [kan ej beställas]</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="Nick Cave and the Bad Seeds: Dig, Lazaruz, Dig! |149" onclick="changeContent(this,'valdaSkivor','oneRecord')">Dig, Lazaruz, Dig!</td>
+                            <td colspan="1" class="kostnad">149 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <input type="checkbox" value="Nick Cave and the Bad Seeds: Push the Sky Away |179" onclick="changeContent(this,'valdaSkivor','oneRecord')">Push the Sky Away</td>
+                            <td colspan="1" class="kostnad">179 SEK</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">Välj mediatyp:</td>
+                            <td colspan="3" style="text-align: right;"> 
+                                <input type="radio" name="media" checked>Vinyl 
+                                <input type="radio" name="media">CD 
+                                <input type="radio" name="media">mp3</td>
+                            </tr>
+                        <tr>
+                            <td colspan="6" style="padding: 10px;"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" style="text-align: right;">
+                                <input type="submit" value="Skicka beställning"></button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="disclaimer">
+                    <p class="para"><strong>Disclaimer</strong></p>
+                    <P class="para">LocalLofi är inte ansvarig för skadat gods vid leverans, tough luck buddy!</p>
+                </div>
+            </div> 
+        </form>
+    </div>
+</body>
+</html>
