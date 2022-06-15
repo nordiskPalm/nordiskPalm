@@ -1,0 +1,47 @@
+{
+    "post":[
+        {
+        "namn":"Cafe Udden",
+        "latitude":"60.286982",
+        "longitude":"16.880171",
+        "typ":"Matplats"
+        },
+
+        {
+        "namn":"Edsviken",
+        "latitude":"60.281196",
+        "longitude":"16.805992",
+        "typ":"Strand"
+        },
+
+        {
+        "namn":"Gysinge",
+        "latitude":"60.287094",
+        "longitude":"16.885128",
+        "typ":"Brygga"
+        },
+
+        {
+        "namn":"Gärdsvekarna",
+        "latitude":"60.261745",
+        "longitude":"16.836784",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Ista",
+        "latitude":"60.253702",
+        "longitude":"16.794437",
+        "typ":"Strand"
+        },
+
+        {
+        "namn":"Karlhomen",
+        "latitude":"60.26224",
+        "longitude":"16.808814",
+        "typ":"Rastplats"
+        }
+    ]
+}
+
+    

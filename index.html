@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<head>
+    <title>LeaderLeder</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.39/dijit/themes/claro/claro.css">
+    <link rel="stylesheet" href="http://js.arcgis.com/3.39/esri/css/esri.css">
+    <link rel="stylesheet" href="map.css">
+    <link rel="stylesheet" href="meny.css">
+    <script src="http://js.arcgis.com/3.39/"></script>
+    <script src="map.js"></script>
+</head>
+
+<body class="claro">
+    
+    <input type="button" class="panelButton" id="POIPin" onclick="activatePOI();" />
+    <input type="button" class="pannelButton" id="PermaPOIPin" onclick="activatePermaPOI();" />
+    <input type="button" class="panelButton" id="DistancePin" onclick="activatePOIdistance();" />
+
+    <div class="unselectable">
+       
+        <div class="sec-center">
+            <input class="dropdown" type="checkbox" id="dropdown" name="dropdown" />
+            <label class="for-dropdown" for="dropdown">Meny</label>
+            <div class="section-dropdown">
+                <input class="dropdown-sub" type="checkbox" id="dropdown_submenu" value="0"
+                    onclick="rotate_arrow(this);"></input>
+                <label class="for-dropdown-sub" for="dropdown_submenu"><a>Etapp-Filter<div class="arrow_down"
+                            id="arrow0"></div></label></a>
+                <div class="section-dropdown-sub">
+                    <a><label for="ef0">Etapp 11</label>
+                        <input class="switch" type="checkbox" id="ef0" value="0" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef1">Etapp 12</label>
+                        <input class="switch" type="checkbox" id="ef1" value="1" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef2">Etapp 13</label>
+                        <input class="switch" type="checkbox" id="ef2" value="2" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef3">Etapp 14</label>
+                        <input class="switch" type="checkbox" id="ef3" value="3" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef4">Etapp 15</label>
+                        <input class="switch" type="checkbox" id="ef4" value="4" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef5">Etapp 16</label>
+                        <input class="switch" type="checkbox" id="ef5" value="5" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef6">Etapp 17</label>
+                        <input class="switch" type="checkbox" id="ef6" value="6" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef7">Etapp 19</label>
+                        <input class="switch" type="checkbox" id="ef7" value="7" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef8">Etapp 20</label>
+                        <input class="switch" type="checkbox" id="ef8" value="8" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef9">Etapp 21</label>
+                        <input class="switch" type="checkbox" id="ef9" value="9" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="ef10">Etapp 22</label>
+                        <input class="switch" type="checkbox" id="ef10" value="10" onclick="filterFuncLed(this);" checked /></a>
+                </div>
+                <input class="dropdown-sub" type="checkbox" id="dropdown_submenu1" value="1"
+                    onclick="rotate_arrow(this)"></input>
+                <label class="for-dropdown-sub" for="dropdown_submenu1"><a>Sling-Filter<div class="arrow_down"
+                            id="arrow1"></div></label></a>
+                <div class="section-dropdown-sub1">
+                    <a><label for="sf0">Slinga 11</label>
+                        <input class="switch" type="checkbox" id="sf0" value="11" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="sf1">Slinga 12</label>
+                        <input class="switch" type="checkbox" id="sf1" value="12" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="sf2">Slinga 12</label>
+                        <input class="switch" type="checkbox" id="sf2" value="13" onclick="filterFuncLed(this);" checked /></a>
+                    <a><label for="sf3">Slinga 21</label>
+                        <input class="switch" type="checkbox" id="sf3" value="13" onclick="filterFuncLed(this);" checked /></a>
+                </div>
+
+                <input class="dropdown-sub" type="checkbox" id="dropdown_submenu4" value="4"
+                    onclick="rotate_arrow(this)"></input>
+                <label class="for-dropdown-sub" for="dropdown_submenu4"><a>Kanotleder<div class="arrow_down"
+                            id="arrow4"></div> </label></a>
+                <div class="section-dropdown-sub4">
+                    <a><label for="kl0">Färnebofjärden</label>
+                        <input class="switch" type="checkbox" id="kl0" value="0" onclick="filterFuncKanot(this);" checked /></a>
+                    <a><label for="kl1">Gysinge</label>
+                        <input class="switch" type="checkbox" id="kl1" value="1" onclick="filterFuncKanot(this);" checked /></a>
+                    <a><label for="kl2">Hedesundafjärden</label>
+                        <input class="switch" type="checkbox" id="kl2" value="2" onclick="filterFuncKanot(this);" checked /></a>
+                </div>
+
+                <input class="dropdown-sub" type="checkbox" id="dropdown_submenu2" value="2"
+                    onclick="rotate_arrow(this)" ;></input>
+                <label class="for-dropdown-sub" for="dropdown_submenu2"><a>POI-Filter<div class="arrow_down"
+                            id="arrow2"></div></label></a>
+                <div class="section-dropdown-sub2">
+                    <a><label for="pf0">Rastplatser</label>
+                        <input class="switch" type="checkbox" id="pf0" value="Rastplats" onclick="filterPOI(this);" checked /></a>
+                    <a><label for="pf1">Matplaser</label>
+                        <input class="switch" type="checkbox" id="pf1" value="Matplats" onclick="filterPOI(this);" checked /></a>
+                    <a><label for="pf2">Stränder</label>
+                        <input class="switch" type="checkbox" id="pf2" value="Strand" onclick="filterPOI(this);" checked /></a>
+                    <a><label for="pf3">Bryggor</label>
+                        <input class="switch" type="checkbox" id="pf3" value="Brygga" onclick="filterPOI(this);" checked /></a>
+                    <a><label for="pf4">Stenstränder</label>
+                        <input class="switch" type="checkbox" id="pf4" value="Stenstrand" onclick="filterPOI(this);" checked /></a>
+                    <a><label for="pf5">Info Kiosker</label>
+                        <input class="switch" type="checkbox" id="pf5" value="Info" onclick="filterPOI(this);" checked /></a>
+                    <a><label for="pf6">Sevärdheter</label>
+                        <input class="switch" type="checkbox" id="pf6" value="Sevärdhet" onclick="filterPOI(this);" checked /></a>
+                </div>
+                <input class="dropdown-sub" type="checkbox" id="dropdown_submenu3" value="3"
+                    onclick="rotate_arrow(this)"></input>
+                <label class="for-dropdown-sub" for="dropdown_submenu3"><a>Övriga-Filter<div class="arrow_down"
+                            id="arrow3"></div></label></a>
+                <div class="section-dropdown-sub3">
+                    <a><label for="of0">Vandring med klättring 1</label>
+                        <input class="switch" type="checkbox" id="of0" value="0" onclick="filterFuncElevation(this);" checked /></a>
+                    <a><label for="of1">Vandring med klättring 2</label>
+                        <input class="switch" type="checkbox" id="of1" value="1" onclick="filterFuncElevation(this);" checked /></a>
+                    <a><label for="of2">Cykling med klättring</label>
+                        <input class="switch" type="checkbox" id="of2" value="2" onclick="filterFuncElevation(this);" checked /></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="mapDiv" class="map">
+        <div id="BasemapToggle"></div>
+    </div>
+
+    <div class="permaPinPopup">
+        <div class="permaFormPopup" id="permaPopupForm">
+            <form action="includes/userPOI.php" method="POST" class="permaFormContainer" name="permaFormName">
+                <h2>Add Point of intrest</h2>
+                <p><italic>Spar permanent</italic></p>
+                <table border="0" width="100%">
+                    <tr>
+                        <input type="radio" name="typPOI" value="Rastplats" checked>Rastplats
+                        <input type="radio" name="typPOI" value="Strand">Strand
+                        <input type="radio" name="typPOI" value="Matplats">Matställe
+                        <br>
+                        <input type="radio" name="typPOI" value="Brygga">Brygga
+                        <input type="radio" name="typPOI" value="Stenstrand">Stenstrand
+                        <input type="radio" name="typPOI" value="Info">Info Kiosk
+                        <input type="radio" name="typPOI" value="Sevärdhet">Sevärdhet
+                    </tr>
+                </table>
+            </a>
+            <label for="infoName">
+                <strong>Vad heter platsen?</strong>
+            </label>
+            <input type="text" name="namn" placeholder="Namn på platsen">
+            <br>
+            <input type="hidden" name="permaLatitude" id="permaLatitude" value="0">
+            <input type="hidden" name="permaLongitude" id="permaLongitude" value="0">
+            <button type="submit" class="btn">Skapa POI</button>
+            <button type="button" class="btn cancel" onclick="closePermaForm();">Avbryt</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="pinPopup">
+        <div class="formPopup" id="popupForm">
+            <form action="/action_page.php" class="formContainer" name="formName">
+                <h2>Add Point of interest</h2>
+                <h4><italic>Endast under session</italic></h4>
+                <table border="0" width="100%">
+                    <tr>
+                        <input type="radio" name="typPOI" value="Rastplats" checked>Rastplats
+                        <input type="radio" name="typPOI" value="Strand">Strand
+                        <input type="radio" name="typPOI" value="Matplats">Matställe
+                        <br>
+                        <input type="radio" name="typPOI" value="Brygga">Brygga
+                        <input type="radio" name="typPOI" value="Stenstrand">Stenstrand
+                        <input type="radio" name="typPOI" value="Info">Info Kiosk <br>
+                        <input type="radio" name="typPOI" value="Sevärdhet">Sevärdhet
+                    </tr>
+                </table>
+                </a>
+                <label for="infoName">
+                    <strong>Vad heter platsen?</strong>
+                </label>
+                <input type="text" id="infoName" placeholder="Bästa badstället" name="infoName" required>
+                <label for="infoExtra">
+                    <strong>Övrigt om platsen</strong>
+                </label>
+                <input type="text" id="infoExtra" placeholder="Här är vattnet alltid varmt" name="infoExtra">
+                <button type="button" class="btn" onclick="placePOI();">Skapa POI</button>
+                <button type="button" class="btn cancel" onclick="closeForm();">Avbryt</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="poiPopup">
+        <div class="formPopupDistance" id="popupFormDistance">
+            <form action="/action_page.php" class="formContainer" name="MeterForm">
+                <h2>Enter distance</h2>
+                <table border="0" width="100%">
+                    <tr>
+                        <label for="Meter">Distans i Meter:</label><br>
+                        <input type="number" id="Meter" name="Meter" value=""><br>
+                    </tr>
+                </table>
+                </a>
+            </br>
+                <button type="button" class="btn" onclick="placePOIdistance();">Beräkna distans</button>
+                <button type="button" class="btn cancel" onclick="closeFormDistance();">Avbryt</button>
+            </form>
+        </div>
+    </div>
+
+</body>

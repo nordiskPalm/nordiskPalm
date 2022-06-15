@@ -1,0 +1,65 @@
+{
+    "post":[
+        {
+            "namn": "Festplatsen",
+            "latitude":"60.363363",
+            "longitude":"17.023026",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Gnupe",
+            "latitude":"60.345797",
+            "longitude":"17.05678",
+            "typ":"Stenstrand"
+        },
+        {
+            "namn": "Hade",
+            "latitude":"60.298647",
+            "longitude":"17.03722",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Korsnäset",
+            "latitude":"60.319739",
+            "longitude":"17.032853",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Kvillanudden",
+            "latitude":"60.371824",
+            "longitude":"17.046833",
+            "typ":"Rastplats"
+        },
+        
+        {
+            "namn": "Sandnäsbadet",
+            "latitude":"60.350155",
+            "longitude":"17.020365",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Södra Sundet",
+            "latitude":"60.312009",
+            "longitude":"17.037241",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Norra Sundet",
+            "latitude":"60.371665",
+            "longitude":"17.020365",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Åshuvudet",
+            "latitude":"60.366079",
+            "longitude":"17.032521",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Östveda",
+            "latitude":"60.383098",
+            "longitude":"17.094887",
+            "typ":"Strand"
+        }
+    ]
+}

@@ -1,0 +1,96 @@
+{
+    "post":[
+        {
+        "namn":"Hamrefjärden",
+        "latitude":"60.238",
+        "longitude":"16.78638",
+        "typ":"Strand"
+        },
+
+        {
+        "namn":"Kallviken",
+        "latitude":"60.220868",
+        "longitude":"16.864293",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Brattnäset",
+        "latitude":"60.219227",
+        "longitude":"16.847813",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Bårbyhällan",
+        "latitude":"60.238677",
+        "longitude":"16.814736",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Båtsportklubben",
+        "latitude":"60.177689",
+        "longitude":"16.801658",
+        "typ":"Strand"
+        },
+
+        {
+        "namn":"Dragsheden",
+        "latitude":"60.236701",
+        "longitude":"16.791154",
+        "typ":"Strand"
+        },
+
+        {
+        "namn":"Göknäset",
+        "latitude":"60.197745",
+        "longitude":"16.748013",
+        "typ":"Stenstrand"
+        },
+
+        {
+        "namn":"Sandön",
+        "latitude":"60.209742",
+        "longitude":"16.788901",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Skekarsbo",
+        "latitude":"60.212219",
+        "longitude":"16.849755",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Strångnäs",
+        "latitude":"60.216802",
+        "longitude":"16.706916",
+        "typ":"Strand"
+        },
+
+        {
+        "namn":"Östa Camping",
+        "latitude":"60.173351",
+        "longitude":"16.760285",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Östa Norr",
+        "latitude":"60.173351",
+        "longitude":"16.791122",
+        "typ":"Rastplats"
+        },
+
+        {
+        "namn":"Östa Väst",
+        "latitude":"60.176483",
+        "longitude":"16.785071",
+        "typ":"Rastplats"
+        }
+    ]
+}
+
+    

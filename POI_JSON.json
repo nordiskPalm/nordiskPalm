@@ -1,0 +1,180 @@
+{
+    "post":[
+        
+        {
+            "namn":"Kallviken",
+            "latitude":"60.220868",
+            "longitude":"16.864293",
+            "typ":"Rastplats"
+        },
+        {
+            "namn": "Kvillanudden",
+            "latitude":"60.371824",
+            "longitude":"17.046833",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Karlholm",
+            "latitude":"60.26224",
+            "longitude":"16.808814",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Brattnäset",
+            "latitude":"60.21920466033419",
+            "longitude":"16.847652816870117",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Bårbyhällan",
+            "latitude":"60.238677",
+            "longitude":"16.814736",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Östa Camping",
+            "latitude":"60.17281496283308",
+            "longitude":"16.766486539175062",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Gärdsvekarna",
+            "latitude":"60.261745",
+            "longitude":"16.836784",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Sandön",
+            "latitude":"60.209742",
+            "longitude":"16.788901",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Skekarsbo",
+            "latitude":"60.212219",
+            "longitude":"16.849755",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Östa Norr",
+            "latitude":"60.173545638550266",
+            "longitude":"16.789887356744174",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Östa Väst",
+            "latitude":"60.176483",
+            "longitude":"16.785071",
+            "typ":"Rastplats"
+        },
+        {
+            "namn":"Cafe Udden",
+            "latitude":"60.286982",
+            "longitude":"16.880171",
+            "typ":"Matplats"
+        },
+        {
+            "namn":"Edsviken",
+            "latitude":"60.281196",
+            "longitude":"16.805992",
+            "typ":"Strand"
+        },
+        {
+            "namn":"Strångnäs",
+            "latitude":"60.215307647077836",
+            "longitude":"16.708650324441585",
+            "typ":"Strand"
+        },
+        {
+            "namn":"Ista",
+            "latitude":"60.253702",
+            "longitude":"16.794437",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Festplatsen",
+            "latitude":"60.363363",
+            "longitude":"17.023026",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Hade",
+            "latitude":"60.298647",
+            "longitude":"17.03722",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Korsnäset",
+            "latitude":"60.319739",
+            "longitude":"17.032853",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Sandnäsbadet",
+            "latitude":"60.350155",
+            "longitude":"17.020365",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Södra Sundet",
+            "latitude":"60.312009",
+            "longitude":"17.037241",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Norra Sundet",
+            "latitude":"60.371665",
+            "longitude":"17.020365",
+            "typ":"Strand"
+        },
+        {
+            "namn":"Båtsportklubben",
+            "latitude":"60.177689",
+            "longitude":"16.801658",
+            "typ":"Strand"
+        },
+        {
+            "namn":"Dragsheden",
+            "latitude":"60.236701",
+            "longitude":"16.791154",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Åshuvudet",
+            "latitude":"60.366079",
+            "longitude":"17.032521",
+            "typ":"Strand"
+        },
+        {
+            "namn": "Östveda",
+            "latitude":"60.383098",
+            "longitude":"17.094887",
+            "typ":"Strand"
+        },
+        {
+            "namn":"Hamrefjärden",
+            "latitude":"60.238",
+            "longitude":"16.78638",
+            "typ":"Strand"
+        },
+        {
+            "namn":"Gysinge",
+            "latitude":"60.287094",
+            "longitude":"16.885128",
+            "typ":"Brygga"
+        },
+        {
+            "namn":"Göknäset",
+            "latitude":"60.197745",
+            "longitude":"16.748013",
+            "typ":"Stenstrand"
+        },
+        {
+            "namn": "Gnupe",
+            "latitude":"60.345797",
+            "longitude":"17.05678",
+            "typ":"Stenstrand"
+        }
+    ]
+}
+    

@@ -1,0 +1,101 @@
+{
+    "post":[
+
+        {
+            "namn":"Högsta punkt",
+            "latitude":"60.179235756",
+            "longitude":"18.164511852",
+            "typ":"Sevärdhet"
+        },
+        
+        {
+            "namn":"Hemliga Huset",
+            "latitude":"60.0591712352",
+            "longitude":"16.6653033067",
+            "typ":"Sevärdhet"
+        },
+        
+        {
+            "namn":"Fiorentina",
+            "latitude":"60.211587598",
+            "longitude":"17.916519262",
+            "typ":"Sevärdhet"
+        },
+        
+        {
+            "namn":"Sofiero",
+            "latitude":"60.529052493",
+            "longitude":"17.426084456",
+            "typ":"Sevärdhet"
+        },
+
+        {
+            "namn":"Info Klarälven",
+            "latitude":"60.406080145",
+            "longitude":"17.849575306",
+            "typ":"Info"
+        },        
+
+        {
+            "namn":"Electrolux",
+            "latitude":"59.887076645",
+            "longitude":"17.091362303",
+            "typ":"Info"
+        },
+
+        {
+            "namn":"Kudos",
+            "latitude":"60.212238628",
+            "longitude":"18.172706130",
+            "typ":"Info"
+        },
+
+        {
+            "namn":"Start & Mål",
+            "latitude":"60.3060622048",
+            "longitude":"16.6495466698",
+            "typ":"Info"
+        },
+
+        {
+            "namn":"Grönsakssoppa",
+            "latitude":"60.567633258",
+            "longitude":"17.435914629",
+            "typ":"Matplats"
+        },
+        
+        {
+            "namn":"Stures Fik",
+            "latitude":"60.1545061637",
+            "longitude":"16.9062883873",
+            "typ":"Matplats"
+        },
+
+        {
+            "namn":"Restaurang Fågil",
+            "latitude":"60.2241476253",
+            "longitude":"16.5739740897",
+            "typ":"Matplats"
+        },
+
+        {
+            "namn":"Blåbärsparadiset",
+            "latitude":"60.3183722869",
+            "longitude":"16.8832894508",
+            "typ":"Rastplats"
+        },
+
+        {
+            "namn":"Lägsta punkt",
+            "latitude":"60.207388569",
+            "longitude":"18.077316962",
+            "typ":"Rastplats"
+        },
+        
+        {
+            "namn":"Café Smögen",
+            "latitude":"60.1822551247",
+            "longitude":"16.6249121726",
+            "typ":"Brygga"
+        }
+    ]}
